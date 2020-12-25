@@ -9,7 +9,7 @@ env:
 phases:
   install:
     runtime-versions:
-      python: 3.8
+      python: 3.6
   pre_build:
     commands:
       - aws --version
