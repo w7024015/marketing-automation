@@ -23,6 +23,6 @@ limit 1100
 {% if is_incremental() %}
 
 -- this filter will only be applied on an incremental run
-where c_custkey not in (select c_custkey  from {{ this }})
+where c_custkey > (select c_custkey  from {{ this }})
 
 {% endif %}
