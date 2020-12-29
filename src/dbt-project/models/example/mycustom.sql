@@ -8,21 +8,10 @@
     Find top 100 customers with the most number of orders
 */
 
-{{
-config(
-  materialized='incremental'
-)
-}}
+{{ config(materialized='table') }}
 
 select c_custkey, c_nationkey, count(*) total_order
 from customer c left join orders o on c.c_custkey = o.o_custkey
 group by c_custkey, c_nationkey
 order by total_order desc
-limit 1100
-
-{% if is_incremental() %}
-
--- this filter will only be applied on an incremental run
-where c_custkey > (select c_custkey  from {{ this }})
-
-{% endif %}
+limit 110
