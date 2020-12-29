@@ -1,4 +1,4 @@
-/* 
+/*
    Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
    SPDX-License-Identifier: MIT-0
 */
@@ -14,4 +14,4 @@ select n_name, n_comment, count(*) as active_buyers
 from nation n left join {{ ref('top_customers') }} c on n.n_nationkey = c.c_nationkey
 group by n_name, n_comment
 order by active_buyers desc
-limit 5
+limit 10
