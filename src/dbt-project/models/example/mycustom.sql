@@ -18,7 +18,7 @@ select c_custkey, c_nationkey, count(*) total_order
 from customer c left join orders o on c.c_custkey = o.o_custkey
 group by c_custkey, c_nationkey
 order by total_order desc
-limit 1000
+limit 1100
 
 {% if is_incremental() %}
 
