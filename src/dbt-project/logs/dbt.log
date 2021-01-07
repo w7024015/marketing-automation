@@ -1,0 +1,239 @@
+2021-01-07 10:38:17.876349 (MainThread): Running with dbt=0.18.1
+2021-01-07 10:38:17.967873 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, defer=None, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2021-01-07 10:38:17.995197 (MainThread): Tracking: tracking
+2021-01-07 10:38:18.005327 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a8fdc4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9bcdde6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a84b4070>]}
+2021-01-07 10:38:18.005643 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=13
+2021-01-07 10:38:18.005996 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2021-01-07 10:38:18.006329 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2021-01-07 10:38:18.007199 (Thread-1): Parsing macros/relations.sql
+2021-01-07 10:38:18.008102 (Thread-1): Parsing macros/adapters.sql
+2021-01-07 10:38:18.034671 (Thread-1): Parsing macros/catalog.sql
+2021-01-07 10:38:18.047889 (Thread-1): Parsing macros/materializations/snapshot_merge.sql
+2021-01-07 10:38:18.049866 (Thread-1): Parsing macros/relations.sql
+2021-01-07 10:38:18.051242 (Thread-1): Parsing macros/adapters.sql
+2021-01-07 10:38:18.070857 (Thread-1): Parsing macros/catalog.sql
+2021-01-07 10:38:18.073081 (Thread-1): Parsing macros/materializations/snapshot_merge.sql
+2021-01-07 10:38:18.075699 (Thread-1): Parsing macros/core.sql
+2021-01-07 10:38:18.079350 (Thread-1): Parsing macros/adapters/common.sql
+2021-01-07 10:38:18.120382 (Thread-1): Parsing macros/materializations/helpers.sql
+2021-01-07 10:38:18.128792 (Thread-1): Parsing macros/materializations/table/table.sql
+2021-01-07 10:38:18.135094 (Thread-1): Parsing macros/materializations/seed/seed.sql
+2021-01-07 10:38:18.154606 (Thread-1): Parsing macros/materializations/view/view.sql
+2021-01-07 10:38:18.160515 (Thread-1): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-01-07 10:38:18.165230 (Thread-1): Parsing macros/materializations/incremental/helpers.sql
+2021-01-07 10:38:18.166976 (Thread-1): Parsing macros/materializations/incremental/incremental.sql
+2021-01-07 10:38:18.172702 (Thread-1): Parsing macros/materializations/common/merge.sql
+2021-01-07 10:38:18.185883 (Thread-1): Parsing macros/materializations/snapshot/strategies.sql
+2021-01-07 10:38:18.201418 (Thread-1): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-01-07 10:38:18.203105 (Thread-1): Parsing macros/materializations/snapshot/snapshot.sql
+2021-01-07 10:38:18.230149 (Thread-1): Parsing macros/schema_tests/relationships.sql
+2021-01-07 10:38:18.231962 (Thread-1): Parsing macros/schema_tests/not_null.sql
+2021-01-07 10:38:18.233458 (Thread-1): Parsing macros/schema_tests/unique.sql
+2021-01-07 10:38:18.235112 (Thread-1): Parsing macros/schema_tests/accepted_values.sql
+2021-01-07 10:38:18.237703 (Thread-1): Parsing macros/etc/get_custom_database.sql
+2021-01-07 10:38:18.239291 (Thread-1): Parsing macros/etc/query.sql
+2021-01-07 10:38:18.240314 (Thread-1): Parsing macros/etc/datetime.sql
+2021-01-07 10:38:18.248609 (Thread-1): Parsing macros/etc/get_custom_alias.sql
+2021-01-07 10:38:18.249551 (Thread-1): Parsing macros/etc/is_incremental.sql
+2021-01-07 10:38:18.251080 (Thread-1): Parsing macros/etc/get_custom_schema.sql
+2021-01-07 10:38:18.285105 (Thread-2): handling status request
+2021-01-07 10:38:18.285543 (Thread-2): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a8417610>]}
+2021-01-07 10:38:18.287068 (Thread-2): sending response (<Response 185 bytes [200 OK]>) to 10.0.32.115
+2021-01-07 10:38:18.304470 (Thread-1): Acquiring new redshift connection "model.my_new_project.top_nations".
+2021-01-07 10:38:18.329932 (Thread-1): Acquiring new redshift connection "model.my_new_project.top_customers_rs".
+2021-01-07 10:38:18.345677 (Thread-1): Acquiring new redshift connection "model.my_new_project.top_customers".
+2021-01-07 10:38:18.360576 (Thread-1): Acquiring new redshift connection "model.my_new_project.mycustom".
+2021-01-07 10:38:21.522153 (Thread-3): handling status request
+2021-01-07 10:38:21.523920 (Thread-3): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a84dcfa0>]}
+2021-01-07 10:38:21.527132 (Thread-3): sending response (<Response 9795 bytes [200 OK]>) to 10.0.32.115
+2021-01-07 10:41:39.689030 (Thread-4): handling status request
+2021-01-07 10:41:39.690608 (Thread-4): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a84dcf40>]}
+2021-01-07 10:41:39.693964 (Thread-4): sending response (<Response 9795 bytes [200 OK]>) to 10.0.44.231
+2021-01-07 10:41:40.099201 (Thread-5): handling compile_sql request
+2021-01-07 10:41:40.099787 (Thread-5): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a84b4a60>]}
+2021-01-07 10:41:40.103602 (Thread-5): Connection 'model.my_new_project.mycustom' was properly closed.
+2021-01-07 10:41:40.912818 (Thread-5): sending response (<Response 138 bytes [200 OK]>) to 10.0.28.8
+2021-01-07 10:41:40.928995 (MainThread): Acquiring new redshift connection "rpc.my_new_project.request".
+2021-01-07 10:41:40.953439 (MainThread): Found 4 models, 0 tests, 0 snapshots, 0 analyses, 163 macros, 0 operations, 0 seed files, 0 sources
+2021-01-07 10:41:40.953823 (Thread-1): Acquiring new redshift connection "rpc.my_new_project.request".
+2021-01-07 10:41:40.953916 (Thread-1): Compiling rpc.my_new_project.request
+2021-01-07 10:41:40.992014 (Thread-1): finished collecting timing info
+2021-01-07 10:41:40.992222 (Thread-1): finished collecting timing info
+2021-01-07 10:41:41.344532 (Thread-6): handling poll request
+2021-01-07 10:41:41.345012 (Thread-6): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9bce46940>]}
+2021-01-07 10:41:41.351016 (Thread-6): sending response (<Response 5952 bytes [200 OK]>) to 10.0.44.32
+2021-01-07 10:41:45.961375 (Thread-7): Got an acceptable cached parse result
+2021-01-07 10:41:45.992302 (Thread-7): Acquiring new redshift connection "model.my_new_project.top_nations".
+2021-01-07 10:41:46.757474 (Thread-8): handling status request
+2021-01-07 10:41:46.757902 (Thread-8): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a813f100>]}
+2021-01-07 10:41:46.758800 (Thread-8): sending response (<Response 747 bytes [200 OK]>) to 10.0.2.124
+2021-01-07 10:42:14.168583 (Thread-9): handling status request
+2021-01-07 10:42:14.170142 (Thread-9): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a813f5b0>]}
+2021-01-07 10:42:14.170994 (Thread-9): sending response (<Response 747 bytes [200 OK]>) to 10.0.27.91
+2021-01-07 10:42:14.547716 (Thread-10): handling compile_sql request
+2021-01-07 10:42:14.548135 (Thread-10): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a813f0d0>]}
+2021-01-07 10:42:14.549347 (Thread-10): Connection 'model.my_new_project.top_nations' was properly closed.
+2021-01-07 10:42:15.399409 (Thread-10): sending response (<Response 138 bytes [200 OK]>) to 10.0.30.161
+2021-01-07 10:42:15.415995 (MainThread): Acquiring new redshift connection "rpc.my_new_project.request".
+2021-01-07 10:42:15.435194 (MainThread): Found 4 models, 0 tests, 0 snapshots, 0 analyses, 163 macros, 0 operations, 0 seed files, 0 sources
+2021-01-07 10:42:15.435583 (Thread-1): Acquiring new redshift connection "rpc.my_new_project.request".
+2021-01-07 10:42:15.435693 (Thread-1): Compiling rpc.my_new_project.request
+2021-01-07 10:42:15.475512 (Thread-1): finished collecting timing info
+2021-01-07 10:42:15.475728 (Thread-1): finished collecting timing info
+2021-01-07 10:42:15.826644 (Thread-11): handling poll request
+2021-01-07 10:42:15.827223 (Thread-11): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a813fb50>]}
+2021-01-07 10:42:15.834465 (Thread-11): sending response (<Response 5958 bytes [200 OK]>) to 10.0.11.112
+2021-01-07 10:42:23.500459 (Thread-12): handling status request
+2021-01-07 10:42:23.500914 (Thread-12): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a37fdb20>]}
+2021-01-07 10:42:23.501809 (Thread-12): sending response (<Response 747 bytes [200 OK]>) to 10.0.44.231
+2021-01-07 10:42:23.879738 (Thread-13): handling compile_sql request
+2021-01-07 10:42:23.880159 (Thread-13): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a37fd8e0>]}
+2021-01-07 10:42:24.678432 (Thread-13): sending response (<Response 138 bytes [200 OK]>) to 10.0.28.8
+2021-01-07 10:42:24.694955 (MainThread): Acquiring new redshift connection "rpc.my_new_project.request".
+2021-01-07 10:42:24.715495 (MainThread): Found 4 models, 0 tests, 0 snapshots, 0 analyses, 163 macros, 0 operations, 0 seed files, 0 sources
+2021-01-07 10:42:24.715892 (Thread-1): Acquiring new redshift connection "rpc.my_new_project.request".
+2021-01-07 10:42:24.715975 (Thread-1): Compiling rpc.my_new_project.request
+2021-01-07 10:42:24.760903 (Thread-1): finished collecting timing info
+2021-01-07 10:42:24.761132 (Thread-1): finished collecting timing info
+2021-01-07 10:42:25.064402 (Thread-14): handling poll request
+2021-01-07 10:42:25.064875 (Thread-14): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a37fd730>]}
+2021-01-07 10:42:25.069560 (Thread-14): sending response (<Response 5958 bytes [200 OK]>) to 10.0.28.8
+2021-01-07 10:42:30.109309 (Thread-15): Got an acceptable cached parse result
+2021-01-07 10:42:30.477477 (Thread-16): handling status request
+2021-01-07 10:42:30.477936 (Thread-16): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a35d24f0>]}
+2021-01-07 10:42:30.478803 (Thread-16): sending response (<Response 447 bytes [200 OK]>) to 10.0.30.161
+2021-01-07 10:43:43.799633 (Thread-17): handling status request
+2021-01-07 10:43:43.801146 (Thread-17): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a35d2820>]}
+2021-01-07 10:43:43.801979 (Thread-17): sending response (<Response 447 bytes [200 OK]>) to 10.0.43.56
+2021-01-07 10:43:44.236584 (Thread-18): handling compile_sql request
+2021-01-07 10:43:44.237175 (Thread-18): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a34fdc10>]}
+2021-01-07 10:43:45.111276 (Thread-18): sending response (<Response 138 bytes [200 OK]>) to 10.0.44.231
+2021-01-07 10:43:45.127762 (MainThread): Acquiring new redshift connection "rpc.my_new_project.request".
+2021-01-07 10:43:45.147644 (MainThread): Found 4 models, 0 tests, 0 snapshots, 0 analyses, 163 macros, 0 operations, 0 seed files, 0 sources
+2021-01-07 10:43:45.148618 (Thread-1): Acquiring new redshift connection "rpc.my_new_project.request".
+2021-01-07 10:43:45.148718 (Thread-1): Compiling rpc.my_new_project.request
+2021-01-07 10:43:45.187641 (Thread-1): finished collecting timing info
+2021-01-07 10:43:45.187848 (Thread-1): finished collecting timing info
+2021-01-07 10:43:45.756945 (Thread-19): handling poll request
+2021-01-07 10:43:45.757573 (Thread-19): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a366d520>]}
+2021-01-07 10:43:45.764114 (Thread-19): sending response (<Response 5813 bytes [200 OK]>) to 10.0.28.8
+2021-01-07 10:43:47.918449 (Thread-20): Got an acceptable cached parse result
+2021-01-07 10:43:48.816248 (Thread-21): handling status request
+2021-01-07 10:43:48.816676 (Thread-21): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a360f8e0>]}
+2021-01-07 10:43:48.817542 (Thread-21): sending response (<Response 447 bytes [200 OK]>) to 10.0.44.231
+2021-01-07 10:43:54.724315 (Thread-22): Got an acceptable cached parse result
+2021-01-07 10:43:55.116256 (Thread-23): handling status request
+2021-01-07 10:43:55.116693 (Thread-23): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a370e1f0>]}
+2021-01-07 10:43:55.117574 (Thread-23): sending response (<Response 447 bytes [200 OK]>) to 10.0.23.172
+2021-01-07 10:43:59.204012 (Thread-24): handling status request
+2021-01-07 10:43:59.204453 (Thread-24): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a36f4df0>]}
+2021-01-07 10:43:59.205326 (Thread-24): sending response (<Response 447 bytes [200 OK]>) to 10.0.2.138
+2021-01-07 10:43:59.617375 (Thread-25): handling compile_sql request
+2021-01-07 10:43:59.617789 (Thread-25): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a350deb0>]}
+2021-01-07 10:44:00.421343 (Thread-25): sending response (<Response 138 bytes [200 OK]>) to 10.0.2.138
+2021-01-07 10:44:00.437700 (MainThread): Acquiring new redshift connection "rpc.my_new_project.request".
+2021-01-07 10:44:00.456717 (MainThread): Found 4 models, 0 tests, 0 snapshots, 0 analyses, 163 macros, 0 operations, 0 seed files, 0 sources
+2021-01-07 10:44:00.457104 (Thread-1): Acquiring new redshift connection "rpc.my_new_project.request".
+2021-01-07 10:44:00.457198 (Thread-1): Compiling rpc.my_new_project.request
+2021-01-07 10:44:00.496127 (Thread-1): finished collecting timing info
+2021-01-07 10:44:00.496331 (Thread-1): finished collecting timing info
+2021-01-07 10:44:00.816026 (Thread-26): handling poll request
+2021-01-07 10:44:00.816478 (Thread-26): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a350deb0>]}
+2021-01-07 10:44:00.820866 (Thread-26): sending response (<Response 5958 bytes [200 OK]>) to 10.0.23.172
+2021-01-07 10:44:04.713611 (Thread-27): Got an acceptable cached parse result
+2021-01-07 10:44:05.084096 (Thread-28): handling status request
+2021-01-07 10:44:05.084697 (Thread-28): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a8413250>]}
+2021-01-07 10:44:05.086013 (Thread-28): sending response (<Response 447 bytes [200 OK]>) to 10.0.2.138
+2021-01-07 10:44:16.237045 (Thread-29): handling status request
+2021-01-07 10:44:16.237476 (Thread-29): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a361feb0>]}
+2021-01-07 10:44:16.238299 (Thread-29): sending response (<Response 447 bytes [200 OK]>) to 10.0.36.98
+2021-01-07 10:44:16.638898 (Thread-30): handling run_sql request
+2021-01-07 10:44:16.639309 (Thread-30): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a3562ca0>]}
+2021-01-07 10:44:17.438511 (Thread-30): sending response (<Response 138 bytes [200 OK]>) to 10.0.23.172
+2021-01-07 10:44:17.455547 (MainThread): Acquiring new redshift connection "rpc.my_new_project.request".
+2021-01-07 10:44:17.474756 (MainThread): Found 4 models, 0 tests, 0 snapshots, 0 analyses, 163 macros, 0 operations, 0 seed files, 0 sources
+2021-01-07 10:44:17.475205 (Thread-1): Acquiring new redshift connection "rpc.my_new_project.request".
+2021-01-07 10:44:17.475303 (Thread-1): Compiling rpc.my_new_project.request
+2021-01-07 10:44:17.516907 (Thread-1): finished collecting timing info
+2021-01-07 10:44:17.517123 (Thread-1): Using redshift connection "rpc.my_new_project.request".
+2021-01-07 10:44:17.517172 (Thread-1): On rpc.my_new_project.request: /*
+   Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+   SPDX-License-Identifier: MIT-0
+*/
+
+
+/*
+    Find 3 nations with the most active customers
+*/
+
+
+
+select n_name, n_comment, count(*) as active_buyers
+from nation n left join "dev"."dbt_rschroeder"."top_customers" c on n.n_nationkey = c.c_nationkey
+group by n_name, n_comment
+order by active_buyers desc
+limit 5
+2021-01-07 10:44:17.517223 (Thread-1): Opening a new connection, currently in state init
+2021-01-07 10:44:17.517260 (Thread-1): Connecting to Redshift using 'database' credentials
+2021-01-07 10:44:17.841253 (Thread-31): handling poll request
+2021-01-07 10:44:17.841749 (Thread-31): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a33485b0>]}
+2021-01-07 10:44:17.843878 (Thread-31): sending response (<Response 3535 bytes [200 OK]>) to 10.0.2.138
+2021-01-07 10:44:18.166451 (Thread-1): Postgres error: relation "dbt_rschroeder.top_customers" does not exist
+
+2021-01-07 10:44:18.166636 (Thread-1): finished collecting timing info
+2021-01-07 10:44:18.166872 (Thread-1): On rpc.my_new_project.request: Close
+2021-01-07 10:44:18.167094 (Thread-1): Got an exception: Database Error
+  relation "dbt_rschroeder.top_customers" does not exist
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/postgres/connections.py", line 46, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 78, in add_query
+    cursor.execute(sql, bindings)
+psycopg2.errors.UndefinedTable: relation "dbt_rschroeder.top_customers" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 84, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 123, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 86, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/postgres/connections.py", line 57, in exception_handler
+    raise dbt.exceptions.DatabaseException(str(e).strip()) from e
+dbt.exceptions.DatabaseException: Database Error
+  relation "dbt_rschroeder.top_customers" does not exist
+2021-01-07 10:44:18.168225 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  relation "dbt_rschroeder.top_customers" does not exist', 'raw_sql': "/*\n   Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.\n   SPDX-License-Identifier: MIT-0\n*/\n\n\n/*\n    Find 3 nations with the most active customers\n*/\n\n{{ config(materialized='table') }}\n\nselect n_name, n_comment, count(*) as active_buyers\nfrom nation n left join {{ ref('top_customers') }} c on n.n_nationkey = c.c_nationkey\ngroup by n_name, n_comment\norder by active_buyers desc\nlimit 5\n", 'compiled_sql': '/*\n   Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.\n   SPDX-License-Identifier: MIT-0\n*/\n\n\n/*\n    Find 3 nations with the most active customers\n*/\n\n\n\nselect n_name, n_comment, count(*) as active_buyers\nfrom nation n left join "dev"."dbt_rschroeder"."top_customers" c on n.n_nationkey = c.c_nationkey\ngroup by n_name, n_comment\norder by active_buyers desc\nlimit 5', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 145, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 349, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 52, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  relation "dbt_rschroeder.top_customers" does not exist', 'raw_sql': "/*\n   Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.\n   SPDX-License-Identifier: MIT-0\n*/\n\n\n/*\n    Find 3 nations with the most active customers\n*/\n\n{{ config(materialized='table') }}\n\nselect n_name, n_comment, count(*) as active_buyers\nfrom nation n left join {{ ref('top_customers') }} c on n.n_nationkey = c.c_nationkey\ngroup by n_name, n_comment\norder by active_buyers desc\nlimit 5\n", 'compiled_sql': '/*\n   Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.\n   SPDX-License-Identifier: MIT-0\n*/\n\n\n/*\n    Find 3 nations with the most active customers\n*/\n\n\n\nselect n_name, n_comment, count(*) as active_buyers\nfrom nation n left join "dev"."dbt_rschroeder"."top_customers" c on n.n_nationkey = c.c_nationkey\ngroup by n_name, n_comment\norder by active_buyers desc\nlimit 5', 'tags': None}, None)
+2021-01-07 10:44:19.295445 (Thread-32): handling poll request
+2021-01-07 10:44:19.295889 (Thread-32): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a3348cd0>]}
+2021-01-07 10:44:19.296834 (Thread-32): sending response (<Response 10479 bytes [200 OK]>) to 10.0.44.231
+2021-01-07 10:45:22.154762 (Thread-33): Got an acceptable cached parse result
+2021-01-07 10:45:22.910747 (Thread-34): handling status request
+2021-01-07 10:45:22.911228 (Thread-34): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a350d730>]}
+2021-01-07 10:45:22.912147 (Thread-34): sending response (<Response 447 bytes [200 OK]>) to 10.0.29.77
+2021-01-07 10:55:48.969488 (Thread-35): handling status request
+2021-01-07 10:55:48.969912 (Thread-35): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a32cb910>]}
+2021-01-07 10:55:48.970720 (Thread-35): sending response (<Response 447 bytes [200 OK]>) to 10.0.44.231
+2021-01-07 10:57:02.410770 (Thread-36): handling status request
+2021-01-07 10:57:02.412228 (Thread-36): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '58d899f3-8e77-449c-8bb2-38758abc61b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9a32cb7f0>]}
+2021-01-07 10:57:02.442204 (Thread-36): sending response (<Response 447 bytes [200 OK]>) to 10.0.29.77
