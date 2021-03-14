@@ -8,7 +8,9 @@
     Find 3 nations with the most active customers
 */
 
-create table top_nations_rs as
+{{ config(materialized='table') }}
+
+--create table top_nations_rs as
 select
 *
 from
